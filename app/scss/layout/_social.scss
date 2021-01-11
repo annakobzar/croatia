@@ -1,0 +1,25 @@
+.social {
+  &__item {
+    font-size: 30px;
+    margin-right: 20px;
+    transition: all 0.3s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: $mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ccc;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

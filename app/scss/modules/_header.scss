@@ -1,0 +1,70 @@
+.header {
+  background: url("../images/home/header-bg.jpg") no-repeat bottom center;
+  min-height: 670px;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+
+  &::before {
+    @include size(100%);
+    @include pos($t: 0, $l: 0);
+
+    content: "";
+    // background-color: rgba(0, 0, 0, 0.22);
+    pointer-events: none;
+  }
+
+  &__content {
+    margin-top: 20vh;
+  }
+
+  &__text {
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font: 500 28px/42px $title;
+    letter-spacing: 0.15em;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font: 700 100px $title;
+    margin-bottom: 50px;
+
+    @media (max-width: $mobile) {
+      font-size: 70px;
+    }
+  }
+}
+
+.logo {
+  font: 700 18px $title;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+.user-menu {
+  &__item {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}

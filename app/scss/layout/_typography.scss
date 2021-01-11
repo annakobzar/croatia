@@ -1,0 +1,18 @@
+.title {
+  color: #142120;
+  font: 700 32px/46px $title;
+  text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: $mobile) {
+    font-size: 44px;
+    line-height: 66px;
+  }
+
+  &::before {
+    @include size(220px, 3px);
+    @include pos($t: 50%, $l: -250px);
+    content: "";
+    background-color: $yellow;
+  }
+}

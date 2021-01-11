@@ -1,0 +1,15 @@
+.btn {
+  font-weight: 700;
+  color: #fff;
+  background-color: $yellow;
+  border: 3px solid $yellow;
+  padding: 15px 40px;
+  border-radius: 0;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+}

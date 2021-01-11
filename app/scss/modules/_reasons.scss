@@ -1,0 +1,53 @@
+.reasons {
+  padding: 60px 0;
+  position: relative;
+
+  @media (min-width: $mobile) {
+    padding: 135px 0 165px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1f3230;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      @include size(16px);
+      @include align(true, false, absolute);
+
+      content: "";
+      background-color: $yellow;
+      border-radius: 50%;
+      left: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &__img {
+    max-height: 655px;
+    overflow: hidden;
+
+    @media (min-width: $mobile) {
+      margin-top: 65px;
+    }
+  }
+}
