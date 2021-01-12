@@ -12,4 +12,14 @@
     background-color: transparent;
     color: #fff;
   }
+
+  &--long {
+    min-width: 100%;
+
+    &:hover {
+      border: 3px solid $darkgreen;
+      background-color: transparent;
+      color: $darkgreen;
+    }
+  }
 }
