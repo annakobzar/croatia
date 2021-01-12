@@ -1,0 +1,92 @@
+.upcoming {
+  padding-bottom: 10vh;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__wrap {
+    margin-bottom: 60px;
+  }
+
+  &__post {
+    @media (max-width: $mobile) {
+      margin-bottom: 70px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+      min-width: 100%;
+    }
+  }
+
+  &__content {
+    @include pos($b: 5px);
+    width: 100%;
+    padding: 20px 15px;
+    background-color: rgba($color: #1f3230, $alpha: 0.9);
+  }
+
+  &__stars {
+    margin-right: 5px;
+
+    .icon-star {
+      font-size: 16px;
+      color: $yellow;
+      cursor: pointer;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__name {
+    font: 700 20px $title;
+    margin-bottom: 15px;
+    color: $grey;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1f3230;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    color: $grey;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    font-size: 26px;
+    margin-right: 15px;
+  }
+
+  &__btn {
+    margin-top: 15px;
+  }
+
+  &__more {
+    font: 700 20px/24px $title;
+    color: $grey;
+    cursor: pointer;
+
+    .icon-loading {
+      font-size: 26px;
+      margin-left: 10px;
+    }
+  }
+}
