@@ -1,0 +1,57 @@
+.about {
+
+    &__info {
+        padding: 85px 90px 85px 250px;
+        width: 50%;
+    }
+
+    &__img {
+        position: relative;
+        
+        &--info {
+            @include size(100%);
+            text-align: center;
+            @include pos();   
+            padding-top: 60px;  
+            line-height: 28px;            
+        }
+
+        &--sub {
+            font-size: 24px;
+            color: #ccc;
+            margin-bottom: 220px;
+        }
+
+        &--title {
+            font: 400 35px/28px $title;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &--text {
+            font-size: 18px;            
+            margin-bottom: 245px;
+        }
+
+        &--date {
+            font-size: 20px;
+            color: #ccc;
+        }
+    
+    &::before {
+        @include pos();
+        @include size(100%);
+        content: '';
+        background-color: rgba(0, 0, 0, 0.52);        
+    }
+  }
+
+  &__title {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+  &__text {
+    line-height: 28px;
+  }
+}
