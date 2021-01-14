@@ -5,6 +5,22 @@
   color: #fff;
   position: relative;
 
+  &__about {
+    background: #142120;
+  }
+
+  &__menu {
+    padding: 35px 15px;
+
+    @media (min-width: $mobile) {
+      padding: 35px 210px;
+    }
+
+    &--about {
+      background: #1F3230;
+    }
+  }
+
   &::before {
     @include size(100%);
     @include pos($t: 0, $l: 0);
