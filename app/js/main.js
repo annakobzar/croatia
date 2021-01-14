@@ -18,6 +18,6 @@ let swiper = new Swiper('.swiper-container', {
 
 		//Animation 
 		AOS.init();
-		
+
 	});
 })(jQuery);
