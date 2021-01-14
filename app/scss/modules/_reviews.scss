@@ -1,0 +1,43 @@
+.reviews {
+  color: #fff;
+  position: relative;
+
+  &__title {
+    @include pos($t: 15%, $l: 17%, $z: 99);
+    color: #fff;
+  }
+
+  &__item {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    margin-bottom: 35px;
+  }
+
+  &__star {
+    margin-right: 25px;
+  }
+
+  &__icon {
+    font-size: 16px;
+    color: $yellow;
+    margin-right: 5px;
+  }
+
+  &__rate {
+    font-size: 14px;
+  }
+
+  &__text {
+    color: #ccc;
+    line-height: 28px;
+    margin-right: 90px;
+  }
+}
