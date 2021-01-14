@@ -12,7 +12,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "swiper": "^6.4.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.1.0",
@@ -29,7 +30,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2",
+    "gulp-terser": "^2.0.1",
     "gulp-useref": "^5.0.0",
     "gulp-wait": "0.0.2",
     "postcss": "^8.2.2"
