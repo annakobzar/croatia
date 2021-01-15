@@ -1,6 +1,5 @@
 'use strict';
 
-
 // swiper
 let swiper = new Swiper('.swiper-container', {
 	direction: 'vertical',
@@ -15,7 +14,6 @@ let swiper = new Swiper('.swiper-container', {
 
 (function($){
 	$(document).ready(function() {
-
 		// Code
 
 		//Animation 

@@ -1,23 +1,24 @@
 .header {
   background: url("../images/home/header-bg.jpg") no-repeat bottom center;
-  min-height: 670px;
   background-size: cover;
   color: #fff;
   position: relative;
 
-  &__about {
-    background: #142120;
+  &--small {
+    background: none;
+    background-color: $darkgreen;
+    padding-bottom: 3rem;
   }
 
   &__menu {
-    padding: 35px 15px;
+    // padding: 35px 15px;
 
     @media (min-width: $mobile) {
-      padding: 35px 210px;
+      // padding: 35px 210px;
     }
 
     &--about {
-      background: #1F3230;
+      background: #1f3230;
     }
   }
 
@@ -35,7 +36,8 @@
   }
 
   &__content {
-    margin-top: 20vh;
+    // margin-top: 20vh;
+    padding: 20vh 0;
   }
 
   &__text {

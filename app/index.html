@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Starter" />
+    <meta name="author" content="Admin" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Croatia</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Starter" />
-  <meta name="author" content="Admin" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>Croatia</title>
+    <link rel="icon" href="images/favicon.png" />
 
-  <link rel="icon" href="images/favicon.png" />
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <!--endbuild-->
 
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/bundle.min.css" />
-  <link rel="stylesheet" href="css/styles.min.css" />
-  <!--endbuild-->
-
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
@@ -26,206 +28,224 @@
         <div
           class="header__menu d-flex justify-content-between align-items-center pt-5"
         >
-          <a href="#" class="logo">cro travel</a>
+          <a href="index.html" class="logo">cro travel</a>
 
+          <nav class="header__menu-wrap d-flex justify-content-between">
+            <div class="menu">
+              <input type="checkbox" class="menu__toggle" id="menu" />
+              <label for="menu" class="menu__label">
+                <span class="menu__line"></span>
+              </label>
 
-      <nav class="header__menu-wrap d-flex justify-content-between">
-        <div class="menu">
-          <input type="checkbox" class="menu__toggle" id="menu" />
-          <label for="menu" class="menu__label">
-            <span class="menu__line"></span>
-          </label>
+              <ul class="menu__list d-flex">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link menu__link--active"
+                    >Home</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Tours</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Clients</a>
+                </li>
+                <li class="menu__item">
+                  <a href="about.html" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#footer" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
 
-          <ul class="menu__list d-flex">
-            <li class="menu__item">
-              <a href="index.html" class="menu__link menu__link--active">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Tours</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Clients</a>
-            </li>
-            <li class="menu__item">
-              <a href="about.html" class="menu__link">About Us</a>
-            </li>
-            <li class="menu__item">
-              <a href="#footer" class="menu__link">Contacts</a>
-            </li>
-          </ul>
+            <ul
+              class="user-menu d-flex justify-content-between align-items-center"
+            >
+              <li class="user-menu__item">
+                <a href="#" class="user-menu__link">
+                  <i class="icon-login"></i>
+                </a>
+              </li>
+              <li class="user-menu__item">
+                <a href="#" class="user-menu__link">
+                  <i class="icon-search"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <ul class="user-menu d-flex justify-content-between align-items-center">
-          <li class="user-menu__item">
-            <a href="#" class="user-menu__link">
-              <i class="icon-login"></i>
-            </a>
-          </li>
-          <li class="user-menu__item">
-            <a href="#" class="user-menu__link">
-              <i class="icon-search"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="container">
-      <!-- menu -->
-
-      <!-- header-content -->
-      <div class="header__content" data-aos="fade-up">
-        <p class="header__text">Get the unforgetable experience</p>
-        <p class="header__subtitle">Discoverinig stunning</p>
-        <h1 class="header__title">Croatia</h1>
-        <a href="#" class="btn header__btn">Let’s do it</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="reasons">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-5">
-          <h2 class="title reasons__title">Reasons to book with us</h2>
-          <ul class="reasons__list">
-            <li class="reasons__item">
-              <p class="subtitle">We’re on hand 24/7</p>
-              <p class="reasons__text">
-                Luxury service begins the moment you contact us, continues
-                throught the booking process, and well after you return from
-                your trip. Want to change your itinerary? Not an issue.
-                Overslept and missed your flight? We’re on hand 24/7
-              </p>
-            </li>
-            <li class="reasons__item">
-              <p class="subtitle">We’re flexible</p>
-              <p class="reasons__text">
-                You want to change your hotel. Take a diffrent flight. Extend
-                your trip. Add a few more family members. It’s fine honestly!
-                No request is too big or too small - we’ll make it happen,
-                anywhere in the world.
-              </p>
-            </li>
-            <li class="reasons__item">
-              <p class="subtitle">We’re in love with extras</p>
-              <p class="reasons__text">
-                We pride ourselves in going a step further than the rest to
-                make your trip si memmorable for all the right reasons
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-6 offset-md-1 reasons__img" data-aos="flip-right">
-          <img src="images/home/reasons.jpg" alt="image" class="img-thumbnail" />
+        <!-- header-content -->
+        <div class="header__content" data-aos="fade-up">
+          <p class="header__text">Get the unforgetable experience</p>
+          <p class="header__subtitle">Discoverinig stunning</p>
+          <h1 class="header__title">Croatia</h1>
+          <a href="#" class="btn header__btn">Let’s do it</a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="upcoming">
-    <div class="container">
-      <h2 class="title upcoming__title">Upcoming tours</h2>
-      <div class="row upcoming__wrap">
-        <div class="col-12 col-md-4">
-          <div class="upcoming__post" data-aos="fade-up">
-            <div class="upcoming__img">
-              <img src="images/upcoming/01.jpg" alt="image" class="img-thumbnail" />
-              <div class="upcoming__content d-flex justify-content-between">
-                <div class="upcoming__stars">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <p class="upcoming__price">From $2.495</p>
-              </div>
-            </div>
-            <h3 class="upcoming__name">Taste of Dalmatia private tour</h3>
-            <p class="upcoming__text">
-              A gourmet tour of Croatia, renowned for its Mediterranean-style
-              diet, rich in seafood and served.
-            </p>
-            <div class="upcoming__info">
-              <i class="icon-moon upcoming__icon"></i>
-              <span class="upcoming__word">7 nights</span>
-            </div>
-            <div class="upcoming__info">
-              <i class="icon-restaurant upcoming__icon"></i>
-              <span class="upcoming__word">Bed & Breakfast</span>
-            </div>
-            <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
+    <section class="reasons">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <h2 class="title reasons__title">Reasons to book with us</h2>
+            <ul class="reasons__list">
+              <li class="reasons__item">
+                <p class="subtitle">We’re on hand 24/7</p>
+                <p class="reasons__text">
+                  Luxury service begins the moment you contact us, continues
+                  throught the booking process, and well after you return from
+                  your trip. Want to change your itinerary? Not an issue.
+                  Overslept and missed your flight? We’re on hand 24/7
+                </p>
+              </li>
+              <li class="reasons__item">
+                <p class="subtitle">We’re flexible</p>
+                <p class="reasons__text">
+                  You want to change your hotel. Take a diffrent flight. Extend
+                  your trip. Add a few more family members. It’s fine honestly!
+                  No request is too big or too small - we’ll make it happen,
+                  anywhere in the world.
+                </p>
+              </li>
+              <li class="reasons__item">
+                <p class="subtitle">We’re in love with extras</p>
+                <p class="reasons__text">
+                  We pride ourselves in going a step further than the rest to
+                  make your trip si memmorable for all the right reasons
+                </p>
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="upcoming__post" data-aos="fade-up">
-            <div class="upcoming__img">
-              <img src="images/upcoming/02.jpg" alt="image" class="img-thumbnail" />
-              <div class="upcoming__content d-flex justify-content-between">
-                <div class="upcoming__stars">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <p class="upcoming__price">From $2.250</p>
-              </div>
-            </div>
-            <h3 class="upcoming__name">Game of Thrones tour</h3>
-            <p class="upcoming__text">
-              Travel in luxury on an exclusive and handcrafted ‘Game of
-              Thrones’ tour, visiting the real-life.
-            </p>
-            <div class="upcoming__info">
-              <i class="icon-moon upcoming__icon"></i>
-              <span class="upcoming__word">8 nights</span>
-            </div>
-            <div class="upcoming__info">
-              <i class="icon-restaurant upcoming__icon"></i>
-              <span class="upcoming__word">Bed & Breakfast</span>
-            </div>
-            <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="upcoming__post" data-aos="fade-up">
-            <div class="upcoming__img">
-              <img src="images/upcoming/01.jpg" alt="image" class="img-thumbnail" />
-              <div class="upcoming__content d-flex justify-content-between">
-                <div class="upcoming__stars">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <p class="upcoming__price">From $2.795</p>
-              </div>
-            </div>
-            <h3 class="upcoming__name">Croatia Lakes & Ciites Vacation</h3>
-            <p class="upcoming__text">
-              A fun and active 10-night trip, experiencing extraordinary
-              Zagreb and the impressive castles nearby.
-            </p>
-            <div class="upcoming__info">
-              <i class="icon-moon upcoming__icon"></i>
-              <span class="upcoming__word">10 nights</span>
-            </div>
-            <div class="upcoming__info">
-              <i class="icon-restaurant upcoming__icon"></i>
-              <span class="upcoming__word">Bed & Breakfast</span>
-            </div>
-            <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
+          <div
+            class="col-12 col-md-6 offset-md-1 reasons__img"
+            data-aos="flip-right"
+          >
+            <img
+              src="images/home/reasons.jpg"
+              alt="image"
+              class="img-thumbnail"
+            />
           </div>
         </div>
       </div>
-      <div class="upcoming__more d-flex justify-content-center">
-        <p class="upcoming__more-word">See more</p>
-        <i class="icon-loading"></i>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="upcoming">
+      <div class="container">
+        <h2 class="title upcoming__title">Upcoming tours</h2>
+        <div class="row upcoming__wrap">
+          <div class="col-12 col-md-4">
+            <div class="upcoming__post" data-aos="fade-up">
+              <div class="upcoming__img">
+                <img
+                  src="images/upcoming/01.jpg"
+                  alt="image"
+                  class="img-thumbnail"
+                />
+                <div class="upcoming__content d-flex justify-content-between">
+                  <div class="upcoming__stars">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="upcoming__price">From $2.495</p>
+                </div>
+              </div>
+              <h3 class="upcoming__name">Taste of Dalmatia private tour</h3>
+              <p class="upcoming__text">
+                A gourmet tour of Croatia, renowned for its Mediterranean-style
+                diet, rich in seafood and served.
+              </p>
+              <div class="upcoming__info">
+                <i class="icon-moon upcoming__icon"></i>
+                <span class="upcoming__word">7 nights</span>
+              </div>
+              <div class="upcoming__info">
+                <i class="icon-restaurant upcoming__icon"></i>
+                <span class="upcoming__word">Bed & Breakfast</span>
+              </div>
+              <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="upcoming__post" data-aos="fade-up">
+              <div class="upcoming__img">
+                <img
+                  src="images/upcoming/02.jpg"
+                  alt="image"
+                  class="img-thumbnail"
+                />
+                <div class="upcoming__content d-flex justify-content-between">
+                  <div class="upcoming__stars">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="upcoming__price">From $2.250</p>
+                </div>
+              </div>
+              <h3 class="upcoming__name">Game of Thrones tour</h3>
+              <p class="upcoming__text">
+                Travel in luxury on an exclusive and handcrafted ‘Game of
+                Thrones’ tour, visiting the real-life.
+              </p>
+              <div class="upcoming__info">
+                <i class="icon-moon upcoming__icon"></i>
+                <span class="upcoming__word">8 nights</span>
+              </div>
+              <div class="upcoming__info">
+                <i class="icon-restaurant upcoming__icon"></i>
+                <span class="upcoming__word">Bed & Breakfast</span>
+              </div>
+              <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="upcoming__post" data-aos="fade-up">
+              <div class="upcoming__img">
+                <img
+                  src="images/upcoming/01.jpg"
+                  alt="image"
+                  class="img-thumbnail"
+                />
+                <div class="upcoming__content d-flex justify-content-between">
+                  <div class="upcoming__stars">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="upcoming__price">From $2.795</p>
+                </div>
+              </div>
+              <h3 class="upcoming__name">Croatia Lakes & Ciites Vacation</h3>
+              <p class="upcoming__text">
+                A fun and active 10-night trip, experiencing extraordinary
+                Zagreb and the impressive castles nearby.
+              </p>
+              <div class="upcoming__info">
+                <i class="icon-moon upcoming__icon"></i>
+                <span class="upcoming__word">10 nights</span>
+              </div>
+              <div class="upcoming__info">
+                <i class="icon-restaurant upcoming__icon"></i>
+                <span class="upcoming__word">Bed & Breakfast</span>
+              </div>
+              <a href="#" class="btn btn--long upcoming__btn">View Tour</a>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming__more d-flex justify-content-center">
+          <p class="upcoming__more-word">See more</p>
+          <i class="icon-loading"></i>
+        </div>
+      </div>
+    </section>
 
     <section class="reviews">
       <h2 class="title reviews__title">Reviews</h2>
@@ -406,68 +426,73 @@
               CRO TRAVEL 2020. <br />
               All rights reserved
             </div>
-  
-        <div class="col-12 col-md-4 offset-md-2 d-flex">
-          <div class="footer__menu">
-            <p class="footer__menu-title">Home</p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Tours</a>
+          </div>
+
+          <div class="col-12 col-md-4 offset-md-2 d-flex">
+            <div class="footer__menu">
+              <p class="footer__menu-title">Home</p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Tours</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Reviews</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <p class="footer__menu-title">Clients</p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="about.html" class="footer__menu-link">About Us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Payment</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">FAQ</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Photos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <p class="footer__menu-title">Contacts</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-2 offset-md-2 text-md-right">
+            <a href="tel:+380996159195" class="footer__link-phone"
+              >+38 099 615 91 95</a
+            >
+            <a href="tel:+380976159195" class="footer__link-phone"
+              >+38 097 615 91 95</a
+            >
+
+            <ul class="social d-flex justify-content-md-end footer__social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <i class="icon-facebook social__icon"></i>
+                </a>
               </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Reviews</a>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <i class="icon-youtube social__icon"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <i class="icon-instagram social__icon"></i>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="footer__menu">
-            <p class="footer__menu-title">Clients</p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="about.html" class="footer__menu-link">About Us</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Payment</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">FAQ</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Photos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu">
-            <p class="footer__menu-title">Contacts</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-2 offset-md-2 text-md-right">
-          <a href="tel:+380996159195" class="footer__link-phone">+38 099 615 91 95</a>
-          <a href="tel:+380976159195" class="footer__link-phone">+38 097 615 91 95</a>
-
-          <ul class="social d-flex justify-content-md-end footer__social">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <i class="icon-facebook social__icon"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <i class="icon-youtube social__icon"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <i class="icon-instagram social__icon"></i>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- <div>
+    <!-- <div>
       <i class="icon-arrow"></i>
       <i class="icon-facebook"></i>
       <i class="icon-heart"></i>
@@ -487,10 +512,9 @@
       <i class="icon-youtube"></i>
     </div> -->
 
-  <!--build:js js/main.min.js -->
-  <script src="js/bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <!--endbuild-->
-</body>
-
+    <!--build:js js/main.min.js -->
+    <script src="js/bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--endbuild-->
+  </body>
 </html>
