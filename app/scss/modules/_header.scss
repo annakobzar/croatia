@@ -1,8 +1,12 @@
 .header {
-  background: url("../images/home/header-bg.jpg") no-repeat bottom center;
+  background: url("../images/home/header-bg-mobile.jpg") no-repeat bottom center;
   background-size: cover;
   color: #fff;
   position: relative;
+
+  @media (min-width: $mobile) {
+    background-image: url("../images/home/header-bg.jpg");
+  }
 
   &--small {
     background: none;
@@ -10,11 +14,18 @@
     padding-bottom: 3rem;
   }
 
-  &__menu {
-    // padding: 35px 15px;
+  &--dalmatia {
+    background: url("../images/dalmatia/dalmatia-bg-mobile.jpg") no-repeat
+      bottom center;
+    background-size: cover;
 
     @media (min-width: $mobile) {
-      // padding: 35px 210px;
+      background-image: url("../images/dalmatia/dalmatia-bg.jpg");
+    }
+  }
+
+  &__menu {
+    @media (min-width: $mobile) {
     }
 
     &--about {
@@ -36,12 +47,16 @@
   }
 
   &__content {
-    // margin-top: 20vh;
     padding: 20vh 0;
   }
 
   &__text {
     line-height: 22px;
+
+    &--dalmatia {
+      font: 500 17px/25.5px $title;
+      letter-spacing: 0.15em;
+    }
   }
 
   &__subtitle {
@@ -54,6 +69,10 @@
     text-transform: uppercase;
     font: 700 100px $title;
     margin-bottom: 50px;
+
+    &--dalmatia {
+      margin-bottom: 0;
+    }
 
     @media (max-width: $mobile) {
       font-size: 70px;
@@ -68,7 +87,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
   }
 }

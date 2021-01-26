@@ -1,0 +1,98 @@
+.tours {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__stars {
+    @include pos($t: 153px, $l: 30px);
+  }
+
+  &__card {
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .tours__card-info {
+        @include pos($b: calc(0 + 90px));
+      }
+
+      .tours__card-arrow {
+        color: $yellow;
+      }
+
+      .tours__card-open {
+        background-color: $darkgreen;
+      }
+    }
+
+    &-open {
+      @include size(100%, 90px);
+      @include pos($b: 0);
+      background-color: rgba($darkgreen, 0.9);
+      padding: 30px;
+      transition: all 0.3s;
+    }
+
+    &-wrap {
+      color: #fff;
+    }
+
+    &-link {
+      color: #fff;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-arrow {
+      font-size: 33px;
+    }
+
+    &-pin {
+      font-size: 15px;
+      margin-right: 7px;
+    }
+
+    &-country {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    &-city {
+      font-weight: 600;
+    }
+
+    img {
+      @include size(100%);
+      object-fit: cover;
+    }
+
+    &-title {
+      @include pos($t: 30px, $l: 30px, $z: 2);
+      font: 700 20px $title;
+      color: #fff;
+    }
+
+    &-info {
+      @include pos($b: calc(-100% + 90px));
+      background-color: rgba($darkgreen, 0.9);
+      width: 100%;
+      height: calc(100% - 90px);
+      transition: 0.5s all;
+    }
+
+    &-text {
+      @include pos($t: 75px, $l: 30px);
+      font-size: 12px;
+      line-height: 28px;
+      color: #fff;
+      padding-right: 35px;
+    }
+  }
+}

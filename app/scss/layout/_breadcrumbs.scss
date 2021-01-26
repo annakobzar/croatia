@@ -1,0 +1,23 @@
+.path {
+  padding: 60px 0 0;
+  color: $grey;
+  font-size: 20px;
+}
+
+.breadcrumbs {
+  &__link {
+    color: $grey;
+    transition: all 0.3s;
+    font-weight: 700;
+
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+
+  .icon-home {
+    color: $yellow;
+    margin-right: 10px;
+  }
+}

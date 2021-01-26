@@ -1,17 +1,5 @@
 @include font-face("icomoon", "fonts/icomoon/icomoon", $ver: "?tzrhty");
 
-// @font-face {
-//   font-family: "icomoon";
-//   src: url("fonts/icomoon.eot?tzrhty");
-//   src: url("fonts/icomoon.eot?tzrhty#iefix") format("embedded-opentype"),
-//     url("fonts/icomoon.ttf?tzrhty") format("truetype"),
-//     url("fonts/icomoon.woff?tzrhty") format("woff"),
-//     url("fonts/icomoon.svg?tzrhty#icomoon") format("svg");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: block;
-// }
-
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -28,6 +16,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+  content: "\e911";
+}
 .icon-arrow:before {
   content: "\e900";
 }

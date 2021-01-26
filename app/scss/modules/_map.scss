@@ -1,0 +1,42 @@
+#map {
+  height: 85vh;
+}
+
+.map {
+  position: relative;
+  &__info {
+    @include size(400px, 300px);
+  }
+
+  &__card {
+    .tours__card-info {
+      @include pos($b: 0, $t: 0, $l: 0, $r: 0);
+    }
+
+    .tours__card-arrow {
+      color: $yellow;
+    }
+
+    .tours__card-open {
+      background-color: $darkgreen;
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .map {
+    margin-bottom: 30%;
+    &__info {
+      @include pos($b: -25%, $l: 2%);
+    }
+  }
+}
+
+@media (min-width: $mobile) {
+  .map {
+    &__info {
+      @include pos($l: 8%, $t: 20%);
+    }
+  }
+}
