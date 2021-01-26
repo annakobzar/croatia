@@ -1,0 +1,122 @@
+.itinerary {
+  padding-bottom: 140px;
+
+  @media (max-width: $mobile) {
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__day {
+    font-weight: 700;
+    margin-right: 35px;
+  }
+
+  &__word {
+    position: relative;
+
+    &:before {
+      @include pos($l: -20px, $b: 3px);
+      @include size(1px, 15px);
+      content: "";
+      background-color: $yellow;
+    }
+  }
+
+  &__icon {
+    @include size(20px);
+    background-color: $yellow;
+    border-radius: 50%;
+    position: relative;
+
+    &:before,
+    &:after {
+      @include pos($l: 5px, $t: 9px, $z: 2);
+      @include size(10px, 2px);
+      background-color: $grey;
+      content: "";
+    }
+
+    &:after {
+      @include pos($l: 9px, $t: 5px, $z: 1);
+      @include size(2px, 10px);
+      background-color: $grey;
+      content: "";
+    }
+  }
+
+  &__text {
+    color: $grey;
+    margin-bottom: 30px;
+    line-height: 28px;
+  }
+
+  &__option {
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__icon-pin {
+    font-size: 16px;
+    color: $yellow;
+  }
+
+  &__img {
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.accordion {
+  background-color: $yellow;
+  .card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1px;
+
+    &-header {
+      background-color: $grey;
+      border: none;
+      padding: 25px 35px;
+      color: #fff;
+
+      &:last-child {
+        &:after {
+          background-color: $grey;
+        }
+      }
+
+      div {
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &[aria-expanded="true"] {
+          .itinerary__icon {
+            &:after {
+              background-color: $yellow;
+            }
+          }
+        }
+      }
+    }
+
+    &-body {
+      padding: 40px 0 50px;
+    }
+  }
+}

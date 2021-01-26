@@ -1,21 +1,35 @@
 .upcoming {
-  padding-bottom: 10vh;
+  &--tours {
+    padding-top: 85px;
+  }
+
+  margin-bottom: 90px;
 
   &__title {
     margin-bottom: 60px;
   }
 
-  &__wrap {
-    margin-bottom: 60px;
+  &__item--show {
+    // &:nth-child(2n + 1) {
+    //   display: none;
+    // }
+
+    // &--not-active {
+    //   display: none;
+    // }
+  }
+
+  &__item {
+    &:nth-child(2n + 1) {
+      display: none;
+    }
   }
 
   &__post {
+    margin-bottom: 70px;
+
     @media (max-width: $mobile) {
       margin-bottom: 70px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -33,16 +47,6 @@
     width: 100%;
     padding: 20px 15px;
     background-color: rgba($color: #1f3230, $alpha: 0.9);
-  }
-
-  &__stars {
-    margin-right: 5px;
-
-    .icon-star {
-      font-size: 16px;
-      color: $yellow;
-      cursor: pointer;
-    }
   }
 
   &__price {
@@ -82,11 +86,16 @@
   &__more {
     font: 700 20px/24px $title;
     color: $grey;
-    cursor: pointer;
+    transition: all 0.3s;
 
     .icon-loading {
       font-size: 26px;
       margin-left: 10px;
+    }
+
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
     }
   }
 }

@@ -1,27 +1,30 @@
 .benifits {
-    padding-top: 85px;
+  padding-top: 5%;
+
+  &__title {
+    margin-bottom: 5%;
+  }
+
+  &__wrap {
+    margin-bottom: 10%;
+  }
+
+  &__info {
+    padding-top: 30px;
+  }
+
+  &__sub {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-weight: 300;
     line-height: 28px;
+    color: $grey;
+    margin-bottom: 30px;
+  }
 
-    &__wrap {
-        margin-bottom: 180px;
-    }
-
-    &__info {
-        padding-right: 90px;
-        padding-top: 40px;
-    }
-
-    &__title {
-        margin-bottom: 90px;
-    }
-
-    &__sub {
-        margin-bottom: 15px;
-    }
-
-    &__text {
-        font-weight: 300;
-        color: $grey;
-        margin-bottom: 40px;
-    }
+  &__img {
+    width: 100%;
+  }
 }
