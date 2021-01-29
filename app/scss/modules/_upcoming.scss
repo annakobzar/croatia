@@ -1,28 +1,16 @@
 .upcoming {
+  margin-bottom: 90px;
+
   &--tours {
     padding-top: 85px;
   }
-
-  margin-bottom: 90px;
 
   &__title {
     margin-bottom: 60px;
   }
 
-  &__item--show {
-    // &:nth-child(2n + 1) {
-    //   display: none;
-    // }
-
-    // &--not-active {
-    //   display: none;
-    // }
-  }
-
-  &__item {
-    &:nth-child(2n + 1) {
-      display: none;
-    }
+  &__wrap {
+    overflow: hidden;
   }
 
   &__post {
@@ -83,12 +71,19 @@
     margin-top: 15px;
   }
 
+  &__more-wrap {
+    text-align: center;
+  }
+
   &__more {
+    position: relative;
     font: 700 20px/24px $title;
     color: $grey;
     transition: all 0.3s;
 
     .icon-loading {
+      position: absolute;
+
       font-size: 26px;
       margin-left: 10px;
     }

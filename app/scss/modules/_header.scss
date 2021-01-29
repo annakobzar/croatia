@@ -1,11 +1,13 @@
 .header {
   background: url("../images/home/header-bg-mobile.jpg") no-repeat bottom center;
   background-size: cover;
+  padding-top: 30px;
   color: #fff;
   position: relative;
 
   @media (min-width: $mobile) {
     background-image: url("../images/home/header-bg.jpg");
+    padding-top: 40px;
   }
 
   &--small {
@@ -25,21 +27,30 @@
   }
 
   &__menu {
-    @media (min-width: $mobile) {
+    &--about {
+      background: $darkgreen;
     }
 
-    &--about {
-      background: #1f3230;
+    @media (max-width: $mobile) {
+      @include pos(fixed, $t: 0, $z: 99);
+      width: 100%;
+      background-color: $darkgreen;
+      padding: 20px 30px;
+      margin-left: -15px;
     }
   }
 
-  &::before {
-    @include size(100%);
-    @include pos($t: 0, $l: 0);
+  &--shadow {
+    position: relative;
 
-    content: "";
-    background-color: rgba(0, 0, 0, 0.22);
-    pointer-events: none;
+    &::before {
+      @include size(100%);
+      @include pos($t: 0, $l: 0);
+
+      content: "";
+      background-color: rgba(0, 0, 0, 0.22);
+      pointer-events: none;
+    }
   }
 
   &__container {
@@ -61,21 +72,29 @@
 
   &__subtitle {
     text-transform: uppercase;
-    font: 500 28px/42px $title;
+    font: 500 28px $title;
     letter-spacing: 0.15em;
+    margin-bottom: 30px;
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
     text-transform: uppercase;
-    font: 700 100px $title;
+    font: 700 100px/50px $title;
     margin-bottom: 50px;
 
     &--dalmatia {
-      margin-bottom: 0;
+      margin-bottom: 30px;
+      text-transform: none;
     }
 
     @media (max-width: $mobile) {
       font-size: 70px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -93,6 +112,8 @@
 }
 
 .user-menu {
+  z-index: 5;
+
   &__item {
     &:first-child {
       margin-right: 20px;
@@ -106,6 +127,10 @@
     &:hover {
       color: $yellow;
       text-decoration: none;
+
+      @media (max-width: $mobile) {
+        color: #fff;
+      }
     }
   }
 }

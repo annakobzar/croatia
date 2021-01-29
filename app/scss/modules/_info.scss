@@ -57,5 +57,10 @@
     &__title {
       font-size: 28px;
     }
+
+    &__stars,
+    &__text {
+      justify-content: center;
+    }
   }
 }
