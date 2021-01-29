@@ -28,7 +28,8 @@
   .map {
     margin-bottom: 30%;
     &__info {
-      @include pos($b: -25%, $l: 2%);
+      @include pos($b: -25%);
+      width: 100%;
     }
   }
 }

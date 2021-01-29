@@ -1,11 +1,26 @@
 'use strict';
 
+//burger
+const burger = document.querySelector(".burger"),
+    menuItem = document.querySelectorAll(".menu__link"),
+    menu = document.querySelector(".menu__list");
+burger.addEventListener("click", () => {
+    menu.classList.toggle("menu__list--active"),
+        burger.classList.toggle("burger--active");
+});
+menuItem.forEach((item) => {
+    item.addEventListener("click", () => {
+        menu.classList.toggle("menu__list--active"),
+            burger.classList.toggle("burger--active");
+    });
+});
+
 // swiper
 let swiper = new Swiper('.swiper-container', {
 	direction: 'vertical',
 	slidesPerView: 1,
 	spaceBetween: 30,
-	mousewheel: true,
+	// mousewheel: true,
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -14,7 +29,7 @@ let swiper = new Swiper('.swiper-container', {
 
 // map
 function initMap() {
-	let map, coords, styles, marker, info, content;
+	let map, coords, styles, marker;
 
 	coords = {
 		lat: 42.652384300109695, 
@@ -199,31 +214,32 @@ function initMap() {
 		map: map,
 		title: "Dubrovnik, Croatia",
 		animation: google.maps.Animation.DROP,
-		icon: '../images/tours/marker.png',
+		icon: 'images/marker.png',
 	  });
-
-	// content = `<h1 class="map__title">Hey! I'm here!</h1>
-	// 			<p class="map__text">I'm styding in Beetroot.</p>
-	// 			`;
-
-	// info = new google.maps.InfoWindow({
-	// 	content: content,
-	//   });
-
-	// marker.addListener("click", () => {
-	// 	info.open(map, marker);
-	//  });
 }
 
 (function($){
 	$(document).ready(function() {
 		// Code
 		
-		$(function(){
-			$('.upcoming__more').click(function(){
-			  $('.upcoming__item:nth-child(2n+1)').slideToggle('');
+		// see more		  
+		  let item = $('.upcoming__wrap');
+		  let height = $('.upcoming__wrap').height();
+		  $('.upcoming__more-text').click(function() {
+			  if (item.css('height') == '760px') {
+			$(this).text('See less');
+				item.animate({
+				  height: height + "px"
+					}, 500);
+			  } else {
+			$(this).text('See more');
+				item.animate({
+				  height: "760px"
+					}, 500);
+			  }
 			});
-		  });
+			$('.upcoming__more-text').trigger('click');
+
 
 		//Animation 
 		AOS.init();

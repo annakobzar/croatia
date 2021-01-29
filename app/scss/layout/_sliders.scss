@@ -1,5 +1,4 @@
 // pagination
-
 .swiper-pagination-bullets {
   right: 0;
   left: 8%;
@@ -67,22 +66,22 @@
 }
 
 @media (max-width: $mobile) {
-  .swiper__slide--left {
-    padding: 20% 30px 15px;
-  }
-
   .swiper-container-vertical > .swiper-pagination-bullets {
     right: 0;
-    left: 8%;
+    left: 6%;
     top: 60%;
 
     &::before,
     &::after {
-      text-shadow: 1px 1px 0 #000;
+      text-shadow: 1px 1px 3px #000;
     }
   }
 
   .swiper-pagination-bullet {
     box-shadow: 0 0 3px #000;
+  }
+
+  .swiper__slide--left {
+    padding: 20% 15px 15px !important;
   }
 }

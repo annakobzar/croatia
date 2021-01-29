@@ -22,20 +22,21 @@
     <![endif]-->
   </head>
   <body>
-    <header class="header header--dalmatia">
+    <header class="header header--dalmatia header--shadow">
       <div class="container header__container">
         <!-- menu -->
         <div
-          class="header__menu d-flex justify-content-between align-items-center pt-5"
+          class="header__menu d-flex justify-content-between align-items-center"
         >
           <a href="index.html" class="logo">cro travel</a>
 
           <nav class="header__menu-wrap d-flex justify-content-between">
             <div class="menu">
-              <input type="checkbox" class="menu__toggle" id="menu" />
-              <label for="menu" class="menu__label">
-                <span class="menu__line"></span>
-              </label>
+              <div class="burger">
+                <span></span>
+                <span class="long"></span>
+                <span></span>
+              </div>
 
               <ul class="menu__list d-flex">
                 <li class="menu__item">
@@ -98,7 +99,7 @@
           </div>
           <div class="info__item">
             <p class="info__text info__text--extra">Trip rating</p>
-            <div class="stars">
+            <div class="stars info__stars d-flex">
               <i class="icon-star info__icon--star"></i>
               <i class="icon-star info__icon--star"></i>
               <i class="icon-star info__icon--star"></i>
@@ -111,11 +112,11 @@
             <p class="info__title">$ 2.495</p>
           </div>
           <div class="info__item">
-            <p class="info__text info__text--extra">
+            <p class="info__text d-flex info__text--extra">
               <i class="icon-heart info__icon"></i>
               Add to wishlist
             </p>
-            <p class="info__text">
+            <p class="info__text d-flex">
               <i class="icon-timetable info__icon"></i>
               View dates
             </p>

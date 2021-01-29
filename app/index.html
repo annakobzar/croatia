@@ -22,20 +22,26 @@
     <![endif]-->
   </head>
   <body>
-    <header class="header">
+    <header class="header header--shadow">
       <div class="container header__container">
         <!-- menu -->
         <div
-          class="header__menu d-flex justify-content-between align-items-center pt-5"
+          class="header__menu d-flex justify-content-between align-items-center"
         >
           <a href="index.html" class="logo">cro travel</a>
 
           <nav class="header__menu-wrap d-flex justify-content-between">
             <div class="menu">
-              <input type="checkbox" class="menu__toggle" id="menu" />
-              <label for="menu" class="menu__label">
+              <!-- <input type="checkbox" class="menu__toggle" id="menu" /> -->
+              <!-- <label for="menu" class="menu__label">
                 <span class="menu__line"></span>
-              </label>
+              </label> -->
+
+              <div class="burger">
+                <span></span>
+                <span class="long"></span>
+                <span></span>
+              </div>
 
               <ul class="menu__list d-flex">
                 <li class="menu__item">
@@ -74,6 +80,7 @@
             </ul>
           </nav>
         </div>
+
         <!-- header-content -->
         <div class="header__content" data-aos="fade-up">
           <p class="header__text">Get the unforgettable experience</p>
@@ -135,7 +142,7 @@
       <div class="container">
         <h2 class="title upcoming__title">Upcoming tours</h2>
         <div class="row upcoming__wrap">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -172,7 +179,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -209,7 +216,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -246,7 +253,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -283,7 +290,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -320,7 +327,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 upcoming__item">
             <div class="upcoming__post" data-aos="fade-up">
               <div class="upcoming__img">
                 <img
@@ -357,13 +364,12 @@
             </div>
           </div>
         </div>
-        <a
-          href="#"
-          class="upcoming__more d-flex flex-row justify-content-center"
-        >
-          See more
-          <i class="icon-loading"></i>
-        </a>
+        <div class="upcoming__more-wrap">
+          <a href="javascript:;" class="upcoming__more">
+            <span class="upcoming__more-text">See more</span>
+            <i class="icon-loading"></i>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -374,7 +380,7 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide reviews__item">
-              <div class="row swiper__wrap">
+              <div class="row no-gutters swiper__wrap">
                 <div class="col-12 col-md-4 offset-md-2 swiper__slide--left">
                   <div class="reviews__name">Jessica Swanson</div>
                   <div class="reviews__info d-flex">
@@ -407,7 +413,7 @@
             </div>
 
             <div class="swiper-slide reviews__item">
-              <div class="row swiper__wrap">
+              <div class="row no-gutters swiper__wrap">
                 <div class="col-12 col-md-4 offset-md-2 swiper__slide--left">
                   <div class="reviews__name">Peter Parker</div>
                   <div class="reviews__info d-flex">
@@ -437,7 +443,7 @@
             </div>
 
             <div class="swiper-slide reviews__item">
-              <div class="row swiper__wrap">
+              <div class="row no-gutters swiper__wrap">
                 <div class="col-12 col-md-4 offset-md-2 swiper__slide--left">
                   <div class="reviews__name">John Doe</div>
                   <div class="reviews__info d-flex">
@@ -469,7 +475,7 @@
             </div>
 
             <div class="swiper-slide reviews__item">
-              <div class="row swiper__wrap">
+              <div class="row no-gutters swiper__wrap">
                 <div class="col-12 col-md-4 offset-md-2 swiper__slide--left">
                   <div class="reviews__name">Diana Prince</div>
                   <div class="reviews__info d-flex">

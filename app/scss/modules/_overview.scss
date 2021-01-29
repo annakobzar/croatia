@@ -59,7 +59,15 @@
       margin: 0 auto;
 
       &:after {
-        @include size(0);
+        @include size(100%, 1px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:first-child {
+        &::after {
+          background-color: $yellow;
+        }
       }
     }
   }
