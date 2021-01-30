@@ -13,7 +13,10 @@
   &--small {
     background: none;
     background-color: $darkgreen;
-    padding-bottom: 3rem;
+
+    @media (min-width: $mobile) {
+      padding-bottom: 3rem;
+    }
   }
 
   &--dalmatia {
