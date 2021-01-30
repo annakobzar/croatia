@@ -109,7 +109,8 @@
   transition: all 0.3s;
 
   &:hover {
-    color: #fff;
+    // color: #fff;
+    color: $yellow;
     text-decoration: none;
   }
 }
