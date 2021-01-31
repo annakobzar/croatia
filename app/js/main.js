@@ -32,8 +32,8 @@ function initMap() {
 	let map, coords, styles, marker;
 
 	coords = {
-		lat: 42.652384300109695, 
-		lng: 18.09005512991261
+		lat: 44.1220702644721, 
+		lng: 15.231531096730613
 	}
 
 	styles = [
@@ -199,7 +199,7 @@ function initMap() {
 
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: coords,
-		zoom: 10,
+		zoom: 7,
 		styles: styles,
 		disableDefaultUI: true,
 		zoomControl: true,
@@ -209,13 +209,92 @@ function initMap() {
 		},
 	});
 
-	marker = new google.maps.Marker({
-		position: coords,
+	// marker = new google.maps.Marker({
+	// 	position: coords,
+	// 	map: map,
+	// 	title: "Dubrovnik, Croatia",
+	// 	animation: google.maps.Animation.DROP,
+	// 	icon: 'images/marker.png',
+	//   });
+
+	//  marker
+	let pinMarker = 'images/marker.png';
+	let pinMarkerMain = 'images/marker-main.png';
+
+	// array of markers
+	let markers = [
+	  {
+		coords:{
+			lat: 42.64604937034245, 
+			lng: 18.087537507866404
+		},
+			img: pinMarkerMain,
+			info: 'Dubrovnik, Croatia'
+	  },
+	  {
+		coords:{
+			lat: 43.300566681003474, 
+			lng: 17.02065963156279
+		},
+			img: pinMarker,
+			info: 'Makaraska, Croatia'
+	  },
+	  {
+		coords:{
+			lat: 43.52427978827527,  
+			lng: 16.434060111945684
+		},
+			img: pinMarker,
+			info:'Split, Croatia'
+	  },
+	  {
+		coords:{
+			lat: 44.1220702644721,  
+			lng: 15.224198602735397
+		},
+			img: pinMarker,
+			info:'Zadar, Croatia'
+	  },
+	  {
+		coords:{
+			lat: 45.347798510042914,  
+			lng: 14.415583718726667
+		},
+			img: pinMarker,
+			info:'Rijeka, Croatia'
+	  },
+	  {
+		coords:{
+			lat: 45.8207514458144,  
+			lng: 15.989517371109724
+		},
+			img: pinMarker,
+			info:'Zagreb, Croatia'
+	  }
+	];
+
+	// add markers
+	for(let i = 0; i <markers.length; i++){
+		addMarker(markers[i]);
+	}
+
+	// put markers on the map
+	function addMarker (props){
+		let marker = new google.maps.Marker({
+		position: props.coords,
 		map: map,
-		title: "Dubrovnik, Croatia",
-		animation: google.maps.Animation.DROP,
-		icon: 'images/marker.png',
-	  });
+		icon: props.img,
+		animation: google.maps.Animation.DROP
+			});
+
+		let infoWindow = new google.maps.InfoWindow({
+		content:props.info,
+			});
+		marker.addListener("click", () => {
+		infoWindow.open(map, marker);
+			});
+	}
+
 }
 
 (function($){

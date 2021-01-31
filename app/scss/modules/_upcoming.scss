@@ -17,7 +17,7 @@
     margin-bottom: 70px;
 
     @media (max-width: $mobile) {
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
   }
 
@@ -72,7 +72,11 @@
   }
 
   &__more-wrap {
+    margin-top: 15px;
     text-align: center;
+    @media (min-width: $mobile) {
+      margin-top: 40px;
+    }
   }
 
   &__more {
@@ -91,6 +95,10 @@
     &:hover {
       color: $yellow;
       text-decoration: none;
+
+      // @media (min-width: $mobile) {
+
+      // }
     }
   }
 }

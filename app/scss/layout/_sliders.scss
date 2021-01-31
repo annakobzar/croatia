@@ -51,6 +51,24 @@
   text-align: left;
 }
 
+.swiper__shadow {
+  position: relative;
+  z-index: 99;
+
+  &:after {
+    @include size(30vw, 27vh);
+    @include pos($l: 0, $t: -15vh, $r: 0, $b: 0, $z: -1);
+
+    content: "";
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(20, 33, 32, 1) 70%
+    );
+  }
+}
+
 .swiper__slide--left {
   padding-top: 15%;
 }
@@ -73,7 +91,8 @@
 
     &::before,
     &::after {
-      text-shadow: 1px 1px 3px #000;
+      // text-shadow: 1px 1px 3px #000;
+      content: "";
     }
   }
 
@@ -83,5 +102,10 @@
 
   .swiper__slide--left {
     padding: 20% 15px 15px !important;
+  }
+  .swiper__shadow {
+    &:after {
+      @include size(0);
+    }
   }
 }

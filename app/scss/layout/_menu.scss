@@ -31,75 +31,16 @@
 
         &:first-child {
           transform: rotate(45deg);
-          top: 6px;
+          top: 9px;
         }
 
         &:last-child {
           transform: rotate(-45deg);
-          top: 6px;
+          top: 9px;
         }
       }
     }
   }
-
-  // **
-  // &__toggle {
-  //   display: none;
-
-  //   &:checked {
-  //     + .menu__label {
-  //       .menu__line {
-  //         display: none;
-  //       }
-
-  //       &::before {
-  //         transform: rotate(45deg);
-  //         top: 11px;
-  //       }
-
-  //       &::after {
-  //         transform: rotate(-45deg);
-  //         bottom: 11px;
-  //       }
-
-  //       ~ .menu__list {
-  //         right: 0;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // &__label {
-  //   @include size(35px, 25px);
-  //   @include pos(relative);
-
-  //   display: block;
-  //   margin-right: 25px;
-
-  //   &::before,
-  //   &::after {
-  //     @include size(100%, 2px);
-  //     @include pos($l: 0);
-
-  //     content: "";
-  //     background: #fff;
-  //     transition: all 0.3s;
-  //   }
-
-  //   &::before {
-  //     top: 0;
-  //   }
-
-  //   &::after {
-  //     bottom: 0;
-  //   }
-  // }
-
-  // &__line {
-  //   @include size(100%, 2px);
-  //   @include pos($l: 0, $t: 46%);
-  //   background: #fff;
-  // }
 
   &__link {
     text-decoration: none;
@@ -118,7 +59,7 @@
     &__list {
       @include size(190px, 100%);
       @include pos(fixed, $t: 0, $r: -190px, $z: 5);
-      background-color: rgba($color: $darkgreen, $alpha: 0.7);
+      background-color: rgba($color: $darkgreen, $alpha: 0.9);
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -146,10 +87,6 @@
 @media (min-width: $mobile) {
   .menu {
     margin-right: 50px;
-
-    // &__label {
-    //   display: none;
-    // }
 
     &__item {
       margin-left: 40px;

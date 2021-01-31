@@ -1,16 +1,6 @@
 .footer {
   background-color: $grey;
-  padding: 15vh 0;
-
-  @media (max-width: $mobile) {
-    padding-left: 15px;
-  }
-
-  &__info {
-    @media (max-width: $mobile) {
-      margin-bottom: 50px;
-    }
-  }
+  padding: 120px 0;
 
   &__rigths {
     margin-top: 25px;
@@ -21,11 +11,6 @@
 
   &__menu {
     margin-right: 50px;
-
-    @media (max-width: $mobile) {
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
   }
 
   &__menu-title {
@@ -56,5 +41,28 @@
 
   &__social {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    padding: 40px 0 40px 20px;
+
+    &__rigths {
+      font-size: 12px;
+    }
+
+    &__menu {
+      margin: 0 auto 10px;
+    }
+
+    &__social {
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    &__info:last-child {
+      text-align: center;
+    }
   }
 }
