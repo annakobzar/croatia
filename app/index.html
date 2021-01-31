@@ -30,13 +30,8 @@
         >
           <a href="index.html" class="logo">cro travel</a>
 
-          <nav class="header__menu-wrap d-flex justify-content-between">
+          <nav class="header__menu-wrap d-flex">
             <div class="menu">
-              <!-- <input type="checkbox" class="menu__toggle" id="menu" /> -->
-              <!-- <label for="menu" class="menu__label">
-                <span class="menu__line"></span>
-              </label> -->
-
               <div class="burger">
                 <span></span>
                 <span class="long"></span>
@@ -69,12 +64,12 @@
             >
               <li class="user-menu__item">
                 <a href="#" class="user-menu__link">
-                  <i class="icon-login"></i>
+                  <i class="icon-login user-menu__icon"></i>
                 </a>
               </li>
               <li class="user-menu__item">
                 <a href="#" class="user-menu__link">
-                  <i class="icon-search"></i>
+                  <i class="icon-search user-menu__icon"></i>
                 </a>
               </li>
             </ul>
@@ -180,7 +175,7 @@
           </div>
 
           <div class="col-12 col-md-4 upcoming__item">
-            <div class="upcoming__post" data-aos="fade-up">
+            <div class="upcoming__post" data-aos="fade-up" data-aos-delay="500">
               <div class="upcoming__img">
                 <img
                   src="images/upcoming/02.jpg"
@@ -217,7 +212,11 @@
           </div>
 
           <div class="col-12 col-md-4 upcoming__item">
-            <div class="upcoming__post" data-aos="fade-up">
+            <div
+              class="upcoming__post"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
               <div class="upcoming__img">
                 <img
                   src="images/upcoming/03.jpg"
@@ -374,7 +373,7 @@
     </section>
 
     <section class="reviews" id="reviews">
-      <h2 class="title reviews__title">Reviews</h2>
+      <h2 class="title reviews__title swiper__shadow">Reviews</h2>
       <div class="container-fluid">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -507,7 +506,7 @@
             </div>
 
             <div class="swiper-slide reviews__item">
-              <div class="row swiper__wrap">
+              <div class="row no-gutters swiper__wrap">
                 <div class="col-12 col-md-4 offset-md-2 swiper__slide--left">
                   <div class="reviews__name">Kate Middleton</div>
                   <div class="reviews__info d-flex">
@@ -547,221 +546,237 @@
       <div class="container-fluid tours__wrapper">
         <div class="row no-gutters">
           <div class="col-12 col-md-6 no-gutters tours__card">
-            <img src="images/tours/island_visovac.jpg" alt="island_visovac" />
-            <div class="tours__card-title">Island Visovac</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/island_visovac.jpg" alt="island_visovac" />
+              <div class="tours__card-title">Island Visovac</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Zadar</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Zadar</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-6 no-gutters tours__card">
-            <img src="images/tours/national_park.jpg" alt="national_park" />
-            <div class="tours__card-title">National Park</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/national_park.jpg" alt="national_park" />
+              <div class="tours__card-title">National Park</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Primosten</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Primosten</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-4 no-gutters tours__card">
-            <img src="images/tours/korcula_island.jpg" alt="korcula_island" />
-            <div class="tours__card-title">Korcula Island</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/korcula_island.jpg" alt="korcula_island" />
+              <div class="tours__card-title">Korcula Island</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Dubrovnik</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Dubrovnik</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-4 no-gutters tours__card">
-            <img src="images/tours/fazana.jpg" alt="fazana" />
-            <div class="tours__card-title">Fazana</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/fazana.jpg" alt="fazana" />
+              <div class="tours__card-title">Fazana</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Fazana</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Fazana</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-4 no-gutters tours__card">
-            <img src="images/tours/podstrana.jpg" alt="podstrana" />
-            <div class="tours__card-title">National Park</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/podstrana.jpg" alt="podstrana" />
+              <div class="tours__card-title">National Park</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Makarska</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Makarska</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-8 no-gutters tours__card">
-            <img src="images/tours/pula.jpg" alt="pula" />
-            <div class="tours__card-title">Pula</div>
-            <div class="tours__card-info">
-              <div class="tours__card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-                sed sit ultrices non pretium placerat.
+            <a href="dalmatia.html" class="tour__link">
+              <img src="images/tours/pula.jpg" alt="pula" />
+              <div class="tours__card-title">Pula</div>
+              <div class="tours__card-info">
+                <div class="tours__card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum sed sit ultrices non pretium placerat.
+                </div>
+                <div class="stars tours__stars">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                </div>
               </div>
-              <div class="stars tours__stars">
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
-                <i class="icon-star"></i>
+              <div class="tours__card-open d-flex justify-content-between">
+                <div class="tours__card-wrap">
+                  <i class="icon-pin02 tours__card-pin"></i>
+                  <span class="tours__card-country">Croatia,</span>
+                  <span class="tours__card-city">Primosten</span>
+                </div>
+                <a href="#" class="tours__card-link"
+                  ><i class="icon-arrow tours__card-arrow"></i
+                ></a>
               </div>
-            </div>
-            <div class="tours__card-open d-flex justify-content-between">
-              <div class="tours__card-wrap">
-                <i class="icon-pin02 tours__card-pin"></i>
-                <span class="tours__card-country">Croatia,</span>
-                <span class="tours__card-city">Primosten</span>
-              </div>
-              <a href="#" class="tours__card-link"
-                ><i class="icon-arrow tours__card-arrow"></i
-              ></a>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-md-4 no-gutters">
             <div class="row no-gutters">
               <div class="col-12 no-gutters tours__card">
-                <img src="images/tours/brac.jpg" alt="podstrana" />
-                <div class="tours__card-title">Brač</div>
-                <div class="tours__card-info">
-                  <div class="tours__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Dictum sed sit ultrices non pretium placerat.
+                <a href="dalmatia.html" class="tour__link">
+                  <img src="images/tours/brac.jpg" alt="podstrana" />
+                  <div class="tours__card-title">Brač</div>
+                  <div class="tours__card-info">
+                    <div class="tours__card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Dictum sed sit ultrices non pretium placerat.
+                    </div>
+                    <div class="stars tours__stars">
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                    </div>
                   </div>
-                  <div class="stars tours__stars">
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
+                  <div class="tours__card-open d-flex justify-content-between">
+                    <div class="tours__card-wrap">
+                      <i class="icon-pin02 tours__card-pin"></i>
+                      <span class="tours__card-country">Croatia,</span>
+                      <span class="tours__card-city">Dubrovnik</span>
+                    </div>
+                    <a href="#" class="tours__card-link"
+                      ><i class="icon-arrow tours__card-arrow"></i
+                    ></a>
                   </div>
-                </div>
-                <div class="tours__card-open d-flex justify-content-between">
-                  <div class="tours__card-wrap">
-                    <i class="icon-pin02 tours__card-pin"></i>
-                    <span class="tours__card-country">Croatia,</span>
-                    <span class="tours__card-city">Dubrovnik</span>
-                  </div>
-                  <a href="#" class="tours__card-link"
-                    ><i class="icon-arrow tours__card-arrow"></i
-                  ></a>
-                </div>
+                </a>
               </div>
 
               <div class="col-12 no-gutters tours__card">
-                <img src="images/tours/plitvice.jpg" alt="podstrana" />
-                <div class="tours__card-title">Plitvice</div>
-                <div class="tours__card-info">
-                  <div class="tours__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Dictum sed sit ultrices non pretium placerat.
+                <a href="dalmatia.html" class="tour__link">
+                  <img src="images/tours/plitvice.jpg" alt="podstrana" />
+                  <div class="tours__card-title">Plitvice</div>
+                  <div class="tours__card-info">
+                    <div class="tours__card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Dictum sed sit ultrices non pretium placerat.
+                    </div>
+                    <div class="stars tours__stars">
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                      <i class="icon-star"></i>
+                    </div>
                   </div>
-                  <div class="stars tours__stars">
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
-                    <i class="icon-star"></i>
+                  <div class="tours__card-open d-flex justify-content-between">
+                    <div class="tours__card-wrap">
+                      <i class="icon-pin02 tours__card-pin"></i>
+                      <span class="tours__card-country">Croatia,</span>
+                      <span class="tours__card-city">Plitvice lakes</span>
+                    </div>
+                    <a href="#" class="tours__card-link"
+                      ><i class="icon-arrow tours__card-arrow"></i
+                    ></a>
                   </div>
-                </div>
-                <div class="tours__card-open d-flex justify-content-between">
-                  <div class="tours__card-wrap">
-                    <i class="icon-pin02 tours__card-pin"></i>
-                    <span class="tours__card-country">Croatia,</span>
-                    <span class="tours__card-city">Plitvice lakes</span>
-                  </div>
-                  <a href="#" class="tours__card-link"
-                    ><i class="icon-arrow tours__card-arrow"></i
-                  ></a>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -771,8 +786,8 @@
 
     <footer class="footer" id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-2 footer__info">
+        <div class="row footer__wrapper">
+          <div class="col-5 col-md-2 footer__info">
             <a href="index.html" class="logo">cro travel</a>
             <div class="footer__rigths">
               CRO TRAVEL 2020. <br />
@@ -780,7 +795,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 offset-md-2 d-flex">
+          <div
+            class="col-7 col-md-4 offset-md-2 footer__info d-flex justify-content-center"
+          >
             <div class="footer__menu">
               <p class="footer__menu-title">Home</p>
               <ul class="footer__menu-list">
@@ -809,12 +826,13 @@
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div class="col-12 col-md-2 offset-md-2 footer__info">
             <div class="footer__menu">
               <p class="footer__menu-title">Contacts</p>
             </div>
-          </div>
 
-          <div class="col-12 col-md-2 offset-md-2 text-md-right">
             <a href="tel:+380996159195" class="footer__link-phone"
               >+38 099 615 91 95</a
             >
@@ -822,19 +840,31 @@
               >+38 097 615 91 95</a
             >
 
-            <ul class="social d-flex justify-content-md-end footer__social">
+            <ul class="social d-flex footer__social">
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a
+                  href="https://www.facebook.com/facebookapp"
+                  target="_blank"
+                  class="social__link"
+                >
                   <i class="icon-facebook social__icon"></i>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  class="social__link"
+                >
                   <i class="icon-youtube social__icon"></i>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a
+                  href="https://www.instagram.com/instagram/?hl=ru"
+                  target="_blank"
+                  class="social__link"
+                >
                   <i class="icon-instagram social__icon"></i>
                 </a>
               </li>
@@ -843,26 +873,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- <div>
-      <i class="icon-arrow"></i>
-      <i class="icon-facebook"></i>
-      <i class="icon-heart"></i>
-      <i class="icon-instagram"></i>
-      <i class="icon-loading"></i>
-      <i class="icon-login"></i>
-      <i class="icon-minus"></i>
-      <i class="icon-moon"></i>
-      <i class="icon-person"></i>
-      <i class="icon-pin01"></i>
-      <i class="icon-pin02"></i>
-      <i class="icon-plus"></i>
-      <i class="icon-restaurant"></i>
-      <i class="icon-search"></i>
-      <i class="icon-star"></i>
-      <i class="icon-timetable"></i>
-      <i class="icon-youtube"></i>
-    </div> -->
 
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>

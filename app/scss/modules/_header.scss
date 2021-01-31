@@ -13,7 +13,10 @@
   &--small {
     background: none;
     background-color: $darkgreen;
-    padding-bottom: 3rem;
+
+    @media (min-width: $mobile) {
+      padding-bottom: 3rem;
+    }
   }
 
   &--dalmatia {
@@ -26,13 +29,23 @@
     }
   }
 
+  &__menu-wrap {
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: row-reverse;
+      width: 36%;
+      margin-right: -15px;
+    }
+  }
+
   &__menu {
     &--about {
       background: $darkgreen;
     }
 
     @media (max-width: $mobile) {
-      @include pos(fixed, $t: 0, $z: 99);
+      @include pos(fixed, $t: 0, $z: 9999);
       width: 100%;
       background-color: $darkgreen;
       padding: 20px 30px;
@@ -106,7 +119,8 @@
   transition: all 0.3s;
 
   &:hover {
-    color: #fff;
+    // color: #fff;
+    color: $yellow;
     text-decoration: none;
   }
 }
@@ -132,5 +146,17 @@
         color: #fff;
       }
     }
+  }
+
+  &__icon {
+    font-size: 16px;
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    // order: 2;
   }
 }

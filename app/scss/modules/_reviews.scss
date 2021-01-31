@@ -1,6 +1,7 @@
 .reviews {
   color: #fff;
   position: relative;
+  overflow: hidden;
 
   &__title {
     @include pos($t: 15%, $l: 16.5%, $z: 99);
@@ -52,6 +53,7 @@
       margin-right: 15px;
       margin-left: 90px;
       font-size: 13px;
+      line-height: 24px;
     }
   }
 }
