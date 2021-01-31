@@ -37,6 +37,7 @@
     @extend .footer__menu-link;
     display: block;
     margin-bottom: 10px;
+    white-space: nowrap;
   }
 
   &__social {
